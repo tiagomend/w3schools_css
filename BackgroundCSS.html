@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Backgrounds</title>
+    <style>
+        /* propriedade background-color específica -> cor de fundo */
+
+        body {
+            font-family: "Ubuntu";
+        }
+
+        h1{
+            background-color: green;
+        }
+
+        div{
+            background-color: lightseagreen;
+        }
+
+        p{
+            background-color: aqua;
+        }
+
+        /* Ao usar a propriedade opacity todos elementos filhos
+        herdam a mesma transparência. Uma opção é usar a
+        transparência do RGBA */
+        div.first {
+            opacity: 0.1;
+        }
+
+        div.second {
+            opacity: 0.3;
+        }
+
+        div.third {
+            opacity: 0.6;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS Background - Exemplo de Cor!</h1>
+    <div>
+        Esse é um texto do elemento div
+        <p>Esse é um parágrafo com cor de fundo</p>
+        Aqui é uma continuação do elemento div
+    </div>
+
+    <div class="first">
+        <h2>Opacidade 0.1</h2>
+    </div>
+
+    <div class="second">
+        <h2>Opacidade 0.3</h2>
+    </div>
+
+    <div class="third">
+        <h2>Opacidade 0.6</h2>
+    </div>
+
+    <div>
+        <h2>Opacidade 1 (default)</h2>
+    </div>
+</body>
+</html>
